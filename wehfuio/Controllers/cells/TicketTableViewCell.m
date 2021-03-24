@@ -7,7 +7,7 @@
 
 #import "TicketTableViewCell.h"
 #import "Ticket.h"
-#import "FavoriteTicket+CoreDataClass.h"
+#import "wehfuio-Swift.h"
 
 @interface TicketTableViewCell()
 @property (nonatomic, strong) UIImageView *airlineLogoView;
@@ -71,8 +71,6 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     dateFormatter.dateFormat = @"dd MMMM yyyy hh:mm";
     _dateLabel.text = [dateFormatter stringFromDate:ticket.departure];
-//    NSURL *urlLogo = AirlineLogo(ticket.airline);
-//    [_airlineLogoView yy_setImageWithURL:urlLogo options:YYWebImageOptionSetImageWithFadeAnimation];
 }
 
 - (void)setFavoriteTicket:(FavoriteTicket *)favoriteTicket {

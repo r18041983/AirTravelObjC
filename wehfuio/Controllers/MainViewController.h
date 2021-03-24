@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  MainViewController.h
 //  wehfuio
 //
 //  Created by Rodion Molchanov on 21.12.2020.
@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface MainViewController : UIViewController
 
 
 @end

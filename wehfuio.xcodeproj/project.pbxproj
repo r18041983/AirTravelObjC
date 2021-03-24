@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F10CFEE259104E300764D51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10CFED259104E300764D51 /* AppDelegate.m */; };
 		8F10CFF1259104E300764D51 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10CFF0259104E300764D51 /* SceneDelegate.m */; };
-		8F10CFF4259104E300764D51 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10CFF3259104E300764D51 /* FirstViewController.m */; };
+		8F10CFF4259104E300764D51 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10CFF3259104E300764D51 /* MainViewController.m */; };
 		8F10CFF9259104E600764D51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F10CFF8259104E600764D51 /* Assets.xcassets */; };
 		8F10CFFC259104E600764D51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F10CFFA259104E600764D51 /* LaunchScreen.storyboard */; };
 		8F10CFFF259104E600764D51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10CFFE259104E600764D51 /* main.m */; };
@@ -19,6 +19,12 @@
 		8F20302E25911B8D00CA205B /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F20302D25911B8D00CA205B /* City.m */; };
 		8F20303225911C7700CA205B /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F20303125911C7700CA205B /* Airport.m */; };
 		8F20303625911D6D00CA205B /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F20303525911D6D00CA205B /* DataManager.m */; };
+		8F227D0B25BF0C3C0024100D /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F227D0A25BF0C3C0024100D /* ProgressView.m */; };
+		8F227D1025BF0D3E0024100D /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F227D0F25BF0D3E0024100D /* ContentViewController.m */; };
+		8F227D1525BF0DCA0024100D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F227D1425BF0DCA0024100D /* FirstViewController.m */; };
+		8F227D1925BF11030024100D /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F227D1825BF11020024100D /* NotificationCenter.m */; };
+		8F227F4725C32B550024100D /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F227F4625C32B550024100D /* NSString+Localize.m */; };
+		8F227F4E25C32BFD0024100D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F227F5025C32BFD0024100D /* Localizable.strings */; };
 		8F5FC69325B5CE47003F6BD2 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5FC69225B5CE47003F6BD2 /* TabBarController.m */; };
 		8F89F3DB25BDCB8C00FB89FC /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F3D925BDCB8C00FB89FC /* TicketTableViewCell.m */; };
 		8F89F3DF25BDCBBE00FB89FC /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F89F3DE25BDCBBE00FB89FC /* TicketsViewController.m */; };
@@ -27,8 +33,9 @@
 		8F8F965B25B0B91E0060320E /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F965A25B0B91E0060320E /* LocationService.m */; };
 		8F8F965F25B0BBB00060320E /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F965E25B0BBAF0060320E /* MapPrice.m */; };
 		8F8F966325B0BD4A0060320E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F966225B0BD4A0060320E /* MapViewController.m */; };
+		8FAD01DD25BEA5810022A675 /* FavoriteTicket+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD01DB25BEA5810022A675 /* FavoriteTicket+CoreDataClass.swift */; };
+		8FAD01DE25BEA5810022A675 /* FavoriteTicket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD01DC25BEA5810022A675 /* FavoriteTicket+CoreDataProperties.swift */; };
 		8FBAC4F825947DAC0024E951 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBAC4F725947DAC0024E951 /* PlaceViewController.m */; };
-		8FE8701225BE64D600499ED3 /* FavoriteTicket+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8701025BE64D600499ED3 /* FavoriteTicket+CoreDataClass.m */; };
 		8FE8701825BE6B1800499ED3 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8701525BE6B1800499ED3 /* cities.json */; };
 		8FE8701925BE6B1800499ED3 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8701625BE6B1800499ED3 /* airports.json */; };
 		8FE8701A25BE6B1800499ED3 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8701725BE6B1800499ED3 /* countries.json */; };
@@ -40,8 +47,8 @@
 		8F10CFED259104E300764D51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F10CFEF259104E300764D51 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		8F10CFF0259104E300764D51 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		8F10CFF2259104E300764D51 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		8F10CFF3259104E300764D51 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8F10CFF2259104E300764D51 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8F10CFF3259104E300764D51 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8F10CFF8259104E600764D51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F10CFFB259104E600764D51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F10CFFD259104E600764D51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +65,19 @@
 		8F20303125911C7700CA205B /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
 		8F20303425911D6D00CA205B /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		8F20303525911D6D00CA205B /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		8F227D0925BF0C3C0024100D /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		8F227D0A25BF0C3C0024100D /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		8F227D0E25BF0D3E0024100D /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		8F227D0F25BF0D3E0024100D /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		8F227D1325BF0DCA0024100D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8F227D1425BF0DCA0024100D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8F227D1725BF11020024100D /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		8F227D1825BF11020024100D /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		8F227F4525C32B550024100D /* NSString+Localize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		8F227F4625C32B550024100D /* NSString+Localize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		8F227F4925C32BB70024100D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		8F227F4F25C32BFD0024100D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8F227F5225C32C010024100D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8F5FC69125B5CE47003F6BD2 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		8F5FC69225B5CE47003F6BD2 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		8F89F3D925BDCB8C00FB89FC /* TicketTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
@@ -74,10 +94,10 @@
 		8F8F965E25B0BBAF0060320E /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
 		8F8F966125B0BD4A0060320E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		8F8F966225B0BD4A0060320E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		8FAD01DB25BEA5810022A675 /* FavoriteTicket+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteTicket+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8FAD01DC25BEA5810022A675 /* FavoriteTicket+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteTicket+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8FBAC4F625947DAC0024E951 /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		8FBAC4F725947DAC0024E951 /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
-		8FE8701025BE64D600499ED3 /* FavoriteTicket+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataClass.m"; sourceTree = "<group>"; };
-		8FE8701125BE64D600499ED3 /* FavoriteTicket+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataClass.h"; sourceTree = "<group>"; };
 		8FE8701525BE6B1800499ED3 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		8FE8701625BE6B1800499ED3 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
 		8FE8701725BE6B1800499ED3 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
@@ -97,6 +117,8 @@
 		8F10CFE0259104E300764D51 = {
 			isa = PBXGroup;
 			children = (
+				8FAD01DB25BEA5810022A675 /* FavoriteTicket+CoreDataClass.swift */,
+				8FAD01DC25BEA5810022A675 /* FavoriteTicket+CoreDataProperties.swift */,
 				8F89F43925BDE74700FB89FC /* wehfuio-Bridging-Header.h */,
 				8F10CFEB259104E300764D51 /* wehfuio */,
 				8F10CFEA259104E300764D51 /* Products */,
@@ -114,52 +136,133 @@
 		8F10CFEB259104E300764D51 /* wehfuio */ = {
 			isa = PBXGroup;
 			children = (
-				8FE8701625BE6B1800499ED3 /* airports.json */,
-				8FE8701525BE6B1800499ED3 /* cities.json */,
-				8FE8701725BE6B1800499ED3 /* countries.json */,
-				8F89F44025BDE79100FB89FC /* CoreDataHelper.h */,
-				8F89F44125BDE79100FB89FC /* CoreDataHelper.m */,
-				8F10CFEC259104E300764D51 /* AppDelegate.h */,
-				8F10CFED259104E300764D51 /* AppDelegate.m */,
-				8FE8701125BE64D600499ED3 /* FavoriteTicket+CoreDataClass.h */,
-				8FE8701025BE64D600499ED3 /* FavoriteTicket+CoreDataClass.m */,
-				8F10CFEF259104E300764D51 /* SceneDelegate.h */,
-				8F10CFF0259104E300764D51 /* SceneDelegate.m */,
-				8F8F965925B0B91E0060320E /* LocationService.h */,
-				8F8F965A25B0B91E0060320E /* LocationService.m */,
+				8F1E0DBD260AF68700F5B6F7 /* Standart */,
+				8F1E0DBC260AF64D00F5B6F7 /* OtherServices */,
+				8F1E0DAF260AF49D00F5B6F7 /* Model */,
+				8F227C7F25BEA5AD0024100D /* JSON */,
+				8F1E0DB4260AF54200F5B6F7 /* Controllers */,
+				8F1E0DBA260AF61A00F5B6F7 /* CoreData */,
+				8F1E0DBE260AF6CC00F5B6F7 /* Managers */,
+				8F227F4525C32B550024100D /* NSString+Localize.h */,
+				8F227F4625C32B550024100D /* NSString+Localize.m */,
+				8F227F5025C32BFD0024100D /* Localizable.strings */,
+				8F10CFF8259104E600764D51 /* Assets.xcassets */,
+				8F10CFFA259104E600764D51 /* LaunchScreen.storyboard */,
+				8F10CFFD259104E600764D51 /* Info.plist */,
+			);
+			path = wehfuio;
+			sourceTree = "<group>";
+		};
+		8F1E0DAF260AF49D00F5B6F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				8F8F965D25B0BBAF0060320E /* MapPrice.h */,
 				8F8F965E25B0BBAF0060320E /* MapPrice.m */,
-				8F10CFF2259104E300764D51 /* FirstViewController.h */,
-				8F10CFF3259104E300764D51 /* FirstViewController.m */,
+				8F20302C25911B8D00CA205B /* City.h */,
+				8F20302D25911B8D00CA205B /* City.m */,
+				8F20302925911B0000CA205B /* Country.m */,
+				8F20302825911B0000CA205B /* Country.h */,
+				8F20303025911C7700CA205B /* Airport.h */,
+				8F20303125911C7700CA205B /* Airport.m */,
+				8F14A496259A3511006F3371 /* Ticket.h */,
+				8F14A497259A3511006F3371 /* Ticket.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F1E0DB4260AF54200F5B6F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E0DBF260AF6F800F5B6F7 /* components */,
+				8F1E0DB7260AF5A300F5B6F7 /* cells */,
+				8F10CFF2259104E300764D51 /* MainViewController.h */,
+				8F10CFF3259104E300764D51 /* MainViewController.m */,
+				8F227D0E25BF0D3E0024100D /* ContentViewController.h */,
+				8F227D0F25BF0D3E0024100D /* ContentViewController.m */,
+				8F227D1325BF0DCA0024100D /* FirstViewController.h */,
+				8F227D1425BF0DCA0024100D /* FirstViewController.m */,
 				8F89F3DD25BDCBBE00FB89FC /* TicketsViewController.h */,
 				8F89F3DE25BDCBBE00FB89FC /* TicketsViewController.m */,
-				8F89F3DA25BDCB8C00FB89FC /* TicketTableViewCell.h */,
-				8F89F3D925BDCB8C00FB89FC /* TicketTableViewCell.m */,
-				8F89F43525BDE62400FB89FC /* Model.xcdatamodeld */,
 				8FBAC4F625947DAC0024E951 /* PlaceViewController.h */,
 				8FBAC4F725947DAC0024E951 /* PlaceViewController.m */,
 				8F8F966125B0BD4A0060320E /* MapViewController.h */,
 				8F8F966225B0BD4A0060320E /* MapViewController.m */,
-				8F14A490259A2F64006F3371 /* APIManager.h */,
-				8F14A491259A2F64006F3371 /* APIManager.m */,
 				8F5FC69125B5CE47003F6BD2 /* TabBarController.h */,
 				8F5FC69225B5CE47003F6BD2 /* TabBarController.m */,
-				8F10CFF8259104E600764D51 /* Assets.xcassets */,
-				8F10CFFA259104E600764D51 /* LaunchScreen.storyboard */,
-				8F10CFFD259104E600764D51 /* Info.plist */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F1E0DB7260AF5A300F5B6F7 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				8F89F3DA25BDCB8C00FB89FC /* TicketTableViewCell.h */,
+				8F89F3D925BDCB8C00FB89FC /* TicketTableViewCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		8F1E0DBA260AF61A00F5B6F7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8F89F44025BDE79100FB89FC /* CoreDataHelper.h */,
+				8F89F44125BDE79100FB89FC /* CoreDataHelper.m */,
+				8F89F43525BDE62400FB89FC /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8F1E0DBC260AF64D00F5B6F7 /* OtherServices */ = {
+			isa = PBXGroup;
+			children = (
+				8F8F965925B0B91E0060320E /* LocationService.h */,
+				8F8F965A25B0B91E0060320E /* LocationService.m */,
+				8F227D1725BF11020024100D /* NotificationCenter.h */,
+				8F227D1825BF11020024100D /* NotificationCenter.m */,
+			);
+			path = OtherServices;
+			sourceTree = "<group>";
+		};
+		8F1E0DBD260AF68700F5B6F7 /* Standart */ = {
+			isa = PBXGroup;
+			children = (
+				8F10CFEC259104E300764D51 /* AppDelegate.h */,
+				8F10CFED259104E300764D51 /* AppDelegate.m */,
+				8F10CFEF259104E300764D51 /* SceneDelegate.h */,
+				8F10CFF0259104E300764D51 /* SceneDelegate.m */,
 				8F10CFFE259104E600764D51 /* main.m */,
-				8F20302825911B0000CA205B /* Country.h */,
-				8F20302925911B0000CA205B /* Country.m */,
-				8F20302C25911B8D00CA205B /* City.h */,
-				8F20302D25911B8D00CA205B /* City.m */,
-				8F20303025911C7700CA205B /* Airport.h */,
-				8F20303125911C7700CA205B /* Airport.m */,
+			);
+			path = Standart;
+			sourceTree = "<group>";
+		};
+		8F1E0DBE260AF6CC00F5B6F7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8F14A490259A2F64006F3371 /* APIManager.h */,
+				8F14A491259A2F64006F3371 /* APIManager.m */,
 				8F20303425911D6D00CA205B /* DataManager.h */,
-				8F14A496259A3511006F3371 /* Ticket.h */,
-				8F14A497259A3511006F3371 /* Ticket.m */,
 				8F20303525911D6D00CA205B /* DataManager.m */,
 			);
-			path = wehfuio;
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8F1E0DBF260AF6F800F5B6F7 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				8F227D0925BF0C3C0024100D /* ProgressView.h */,
+				8F227D0A25BF0C3C0024100D /* ProgressView.m */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		8F227C7F25BEA5AD0024100D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8701625BE6B1800499ED3 /* airports.json */,
+				8FE8701525BE6B1800499ED3 /* cities.json */,
+				8FE8701725BE6B1800499ED3 /* countries.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 8F10CFE0259104E300764D51;
 			productRefGroup = 8F10CFEA259104E300764D51 /* Products */;
@@ -220,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE8701825BE6B1800499ED3 /* cities.json in Resources */,
+				8F227F4E25C32BFD0024100D /* Localizable.strings in Resources */,
 				8FE8701925BE6B1800499ED3 /* airports.json in Resources */,
 				8F10CFFC259104E600764D51 /* LaunchScreen.storyboard in Resources */,
 				8FE8701A25BE6B1800499ED3 /* countries.json in Resources */,
@@ -235,18 +340,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBAC4F825947DAC0024E951 /* PlaceViewController.m in Sources */,
-				8F10CFF4259104E300764D51 /* FirstViewController.m in Sources */,
+				8F10CFF4259104E300764D51 /* MainViewController.m in Sources */,
 				8F10CFEE259104E300764D51 /* AppDelegate.m in Sources */,
 				8F89F3DF25BDCBBE00FB89FC /* TicketsViewController.m in Sources */,
 				8F20303225911C7700CA205B /* Airport.m in Sources */,
 				8F89F43725BDE62400FB89FC /* Model.xcdatamodeld in Sources */,
 				8F89F44225BDE79100FB89FC /* CoreDataHelper.m in Sources */,
-				8FE8701225BE64D600499ED3 /* FavoriteTicket+CoreDataClass.m in Sources */,
+				8F227D1525BF0DCA0024100D /* FirstViewController.m in Sources */,
 				8F14A492259A2F64006F3371 /* APIManager.m in Sources */,
 				8F20302E25911B8D00CA205B /* City.m in Sources */,
+				8F227D0B25BF0C3C0024100D /* ProgressView.m in Sources */,
+				8F227D1925BF11030024100D /* NotificationCenter.m in Sources */,
+				8FAD01DE25BEA5810022A675 /* FavoriteTicket+CoreDataProperties.swift in Sources */,
+				8FAD01DD25BEA5810022A675 /* FavoriteTicket+CoreDataClass.swift in Sources */,
 				8F10CFFF259104E600764D51 /* main.m in Sources */,
 				8F89F3DB25BDCB8C00FB89FC /* TicketTableViewCell.m in Sources */,
+				8F227F4725C32B550024100D /* NSString+Localize.m in Sources */,
 				8F20303625911D6D00CA205B /* DataManager.m in Sources */,
+				8F227D1025BF0D3E0024100D /* ContentViewController.m in Sources */,
 				8F14A498259A3511006F3371 /* Ticket.m in Sources */,
 				8F10CFF1259104E300764D51 /* SceneDelegate.m in Sources */,
 				8F8F965B25B0B91E0060320E /* LocationService.m in Sources */,
@@ -264,8 +375,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				8F10CFFB259104E600764D51 /* Base */,
+				8F227F4925C32BB70024100D /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8F227F5025C32BFD0024100D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F227F4F25C32BFD0024100D /* ru */,
+				8F227F5225C32C010024100D /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -334,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -393,6 +516,7 @@
 				DEVELOPMENT_TEAM = F7VPDNN42Y;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = wehfuio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,6 +540,7 @@
 				DEVELOPMENT_TEAM = F7VPDNN42Y;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = wehfuio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

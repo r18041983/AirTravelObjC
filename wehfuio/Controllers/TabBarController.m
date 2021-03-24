@@ -6,7 +6,7 @@
 //
 
 #import "TabBarController.h"
-#import "FirstViewController.h"
+#import "MainViewController.h"
 #import "MapViewController.h"
 #import "TicketsViewController.h"
 
@@ -29,7 +29,7 @@
 - (NSArray<UIViewController*> *)createViewControllers {
     NSMutableArray<UIViewController*> *controllers = [NSMutableArray new];
     
-    FirstViewController *mainViewController = [[FirstViewController alloc] init];
+    MainViewController *mainViewController = [[MainViewController alloc] init];
     mainViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Поиск" image:[UIImage imageNamed:@"search"] selectedImage:[UIImage imageNamed:@"search_selected"]];
     UINavigationController *mainNavigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     [controllers addObject:mainNavigationController];

@@ -7,18 +7,13 @@
 
 #import "CoreDataHelper.h"
 #import <CoreData/CoreData.h>
-#import "FavoriteTicket+CoreDataClass.h"
-
+#import "wehfuio-Swift.h"
 
 @interface CoreDataHelper ()
 @property (nonatomic, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) NSManagedObjectModel *managedObjectModel;
 @end
-
-
-
-
 
 @implementation CoreDataHelper
 + (instancetype)sharedInstance
@@ -68,29 +63,17 @@
 }
 
 - (void)addToFavorite:(Ticket *)ticket {
-//    FavoriteTicket *favorite = [NSEntityDescription insertNewObjectForEntityForName:@"FavoriteTicket" inManagedObjectContext:_managedObjectContext];
-//    favorite.price = ticket.price.intValue;
-//    favorite.airline = ticket.airline;
-//    favorite.departure = ticket.departure;
-//    favorite.expires = ticket.expires;
-//    favorite.flightNumber = ticket.flightNumber.intValue;
-//    favorite.returnDate = ticket.returnDate;
-//    favorite.from = ticket.from;
-//    favorite.to = ticket.to;
-//    favorite.created = [NSDate date];
-    
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:@"FavoriteTicket" inManagedObjectContext: _managedObjectContext];
-    [newManagedObject setValue: ticket.price forKey:@"price"];
-    [newManagedObject setValue: ticket.airline forKey:@"airline"];
-    [newManagedObject setValue: ticket.departure forKey:@"departure"];
-    [newManagedObject setValue: ticket.expires forKey:@"expires"];
-    [newManagedObject setValue: ticket.flightNumber forKey:@"flightNumber"];
-    [newManagedObject setValue: ticket.returnDate forKey:@"returnDate"];
-    [newManagedObject setValue: ticket.from forKey:@"from"];
-    [newManagedObject setValue: ticket.to forKey:@"to"];
-    [newManagedObject setValue: [NSDate date] forKey:@"created"];
-    
-    
+    FavoriteTicket *favorite = [NSEntityDescription insertNewObjectForEntityForName:@"FavoriteTicket" inManagedObjectContext:_managedObjectContext];
+    favorite.price = ticket.price.intValue;
+    favorite.airline = ticket.airline;
+    favorite.departure = ticket.departure;
+    favorite.expires = ticket.expires;
+    favorite.flightNumber = ticket.flightNumber.intValue;
+    favorite.returnDate = ticket.returnDate;
+    favorite.from = ticket.from;
+    favorite.to = ticket.to;
+    favorite.created = [NSDate date];
+      
     [self save];
 }
 
@@ -107,11 +90,5 @@
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"created" ascending:NO]];
     return [_managedObjectContext executeFetchRequest:request error:nil];
 }
-
-
-
-
-
-
 
 @end

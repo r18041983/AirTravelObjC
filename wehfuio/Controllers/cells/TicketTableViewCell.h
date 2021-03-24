@@ -9,8 +9,7 @@
 #import "DataManager.h"
 #import "APIManager.h"
 #import "Ticket.h"
-#import "FavoriteTicket+CoreDataClass.h"
-
+#import "wehfuio-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
